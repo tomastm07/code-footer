@@ -15,9 +15,11 @@ const Menu = ({ url, name, navLinks = [] }) => {
         <h4>
           <a href={url}>{name}</a>
         </h4>
+        {/* displays the open and close icon is it's a submenu */}
         {isSubMenu && <span onClick={handleClick}>{open ? "-" : "+"} </span>}
       </div>
-      {isSubMenu && open && <SubMenu navLinks={navLinks} />}
+      {/* display the submenu links */}
+      {isSubMenu && open && <SubMenus navLinks={navLinks} />}
     </li>
   );
 };
