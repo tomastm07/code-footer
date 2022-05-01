@@ -7,7 +7,11 @@ const DesktopFooter = ({ navLinkGroups, legalText }) => {
       {/* generates every menu item */}
       <Navigation navLinkGroups={navLinkGroups} />
       {/* legaltext is null if not defined  */}
-      <div>{legalText !== null ? legalText : ""}</div>
+      <div>
+        {legalText.map((text) => (
+          <p>{text}</p>
+        ))}
+      </div>
     </div>
   );
 };

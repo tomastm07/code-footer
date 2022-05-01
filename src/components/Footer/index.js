@@ -5,7 +5,7 @@ import { getLegalText } from "../../utils";
 
 const Footer = ({ desktopFooter, mobileFooter }) => {
   const legalTextDesktop = getLegalText(desktopFooter.legalText);
-  const legalTextMobile = getLegalText(desktopFooter.legalText);
+  const legalTextMobile = getLegalText(mobileFooter.legalText);
 
   return (
     <footer>
@@ -13,7 +13,10 @@ const Footer = ({ desktopFooter, mobileFooter }) => {
         legalText={legalTextDesktop}
         navLinkGroups={desktopFooter.navLinkGroups}
       /> */}
-      <MobileFooter navLinkGroups={mobileFooter.navLinkGroups} />
+      <MobileFooter
+        navLinkGroups={mobileFooter.navLinkGroups}
+        legalText={legalTextMobile}
+      />
     </footer>
   );
 };

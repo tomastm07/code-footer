@@ -19,7 +19,7 @@ const Menu = ({ url, name, navLinks = [] }) => {
         {isSubMenu && <span onClick={handleClick}>{open ? "-" : "+"} </span>}
       </div>
       {/* display the submenu links */}
-      {isSubMenu && open && <SubMenus navLinks={navLinks} />}
+      {isSubMenu && open && <SubMenu navLinks={navLinks} />}
     </li>
   );
 };
