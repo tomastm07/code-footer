@@ -1,10 +1,11 @@
 export const getLegalText = (legalText) => {
   if (legalText && legalText.length >= 1) {
-    const children = legalText[0].children;
+    const children = legalText?.map((item) => item.children);
+
     if (children && children.length >= 1) {
-      const text = children[0].text;
+      const text = children.map((child) => child[0].text);
       return text;
     }
   }
-  return null;
+  return [];
 };

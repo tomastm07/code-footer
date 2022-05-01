@@ -3,11 +3,19 @@ import Navigation from "./Navigation";
 
 const DesktopFooter = ({ navLinkGroups, legalText }) => {
   return (
-    <div className="desktop-menu-container">
+    <div>
+      <>
+      <div className="menuInner md:flex md:justify-between md:pt-[50px]">
       {/* generates every menu item */}
-      <Navigation navLinkGroups={navLinkGroups} />
+      <Navigation  navLinkGroups={navLinkGroups} />
+      </div>
+      <div className="footerCopyright block mt-[70px] pb-[50px]">
       {/* legaltext is null if not defined  */}
-      <div>{legalText !== null ? legalText : ""}</div>
+        {legalText.map((text) => (
+          <p className="text-white text-center">{text}</p>
+        ))}
+      </div>
+      </>
     </div>
   );
 };
