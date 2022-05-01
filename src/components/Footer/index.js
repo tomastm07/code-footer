@@ -1,5 +1,5 @@
 import React from "react";
-import mockData from "./mockData"
+
 
 const Footer = ({ desktopFooter, mobileFooter }) => {
   console.log(mobileFooter);
