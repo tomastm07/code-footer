@@ -1,13 +1,13 @@
 import React from "react";
 
-const FooterMenuItem = ({ name, navLinks }) => {
+const Menu = ({ name, navLinks=[] }) => {
   return (
     <div>
       <h4>{name}</h4>
       {/* create nav links */}
-      <ul>
+      <ul className="list-none">
         {navLinks.map((link) => (
-          <li key={link._id}>
+          <li  key={link._id}>
             <a href={link.url}>{link.name}</a>
           </li>
         ))}
@@ -16,4 +16,4 @@ const FooterMenuItem = ({ name, navLinks }) => {
   );
 };
 
-export default FooterMenuItem;
+export default Menu;

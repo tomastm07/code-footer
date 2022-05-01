@@ -20,8 +20,8 @@
     "typescript": "4.1.3"
   },
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch",
-    "start": "npm run tailwind || react-scripts start",
+    "tailwind": "npx tailwindcss -i ./src/styles.css -o ./src/styles.min.css --minify --watch ",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
