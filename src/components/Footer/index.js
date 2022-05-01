@@ -8,12 +8,12 @@ const Footer = ({ desktopFooter, mobileFooter }) => {
   const legalTextMobile = getLegalText(desktopFooter.legalText);
 
   return (
-    <footer>
-      {/* <DesktopFooter
+    <footer className="bg-purple">
+      <DesktopFooter
         legalText={legalTextDesktop}
         navLinkGroups={desktopFooter.navLinkGroups}
-      /> */}
-      <MobileFooter navLinkGroups={mobileFooter.navLinkGroups} />
+      />
+      {/* <MobileFooter navLinkGroups={mobileFooter.navLinkGroups} /> */}
     </footer>
   );
 };
