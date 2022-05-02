@@ -14,10 +14,11 @@ const Footer = ({ desktopFooter, mobileFooter }) => {
           legalText={legalTextDesktop}
           navLinkGroups={desktopFooter.navLinkGroups}
         />
-        {/* <MobileFooter
-          navLinkGroups={mobileFooter.navLinkGroups}
-          legalText={legalTextMobile}
-        /> */}
+        <MobileFooter
+        navLinkGroups={mobileFooter.navLinkGroups}
+        legalText={legalTextMobile}
+        socialLinks={mobileFooter.socialLinks}
+        />
       </div>
     </footer>
   );

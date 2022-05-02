@@ -1,3 +1,8 @@
+import facebookIcon from './assets/icons/facebook.svg'
+import instagramIcon from './assets/icons/instagram.svg'
+import pinterestIcon from './assets/icons/pinterest.svg'
+import twitterIcon from './assets/icons/twitter.svg'
+
 const desktopFooter = {
   legalText: [
     {
@@ -174,6 +179,29 @@ const mobileFooter = {
     },
   ],
   name: "Mobile",
+  socialLinks: [
+    
+    {
+      name: "Instagram",
+      icon: instagramIcon,
+      url: "#",
+    },
+    {
+      name: "Facebook",
+      icon: facebookIcon,
+      url: "#",
+    },
+    {
+      name: "Pinterest",
+      icon: pinterestIcon,
+      url: "#",
+    },
+    {
+      name: "Twitter",
+      icon: twitterIcon,
+      url: "#",
+    },
+  ],
   navLinkGroups: [
     {
       _id: "7007fe05-bbfd-4442-9cfa-c3d7f74eb717",

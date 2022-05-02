@@ -3,7 +3,7 @@ import MenuCollapse from "./MenuCollapse";
 
 const NavigationCollapse = ({ navLinkGroups }) => {
   return (
-    <ul>
+    <ul className="text-white">
       {navLinkGroups.map((nav) => (
         <MenuCollapse
           key={nav._id}

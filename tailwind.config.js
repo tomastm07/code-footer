@@ -2,6 +2,7 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     container:{
+
       center: true,
       padding: '15px',
     },
@@ -11,5 +12,5 @@ module.exports = {
       }
     },
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [],
 };
