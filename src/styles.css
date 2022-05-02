@@ -3,3 +3,13 @@
 @tailwind utilities;
 
 
+
+.ftLinkMobile{
+    border-bottom: 0.5px solid white;
+    padding: 14.5px 0;
+    font-weight: 900;
+}
+
+footer{
+    padding: 30px 15px 15px 15px;
+}

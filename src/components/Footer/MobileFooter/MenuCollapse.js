@@ -9,14 +9,14 @@ const Menu = ({ url, name, navLinks = [] }) => {
   return (
     <li className="menu-container">
       <div
-        className="menu-heading-container"
+        className="ftLinkMobile flex justify-between"
         onClick={isSubMenu && handleClick}
       >
         <h4>
           <a href={url}>{name}</a>
         </h4>
         {/* displays the open and close icon is it's a submenu */}
-        {isSubMenu && <span onClick={handleClick}>{open ? "-" : "+"} </span>}
+        {isSubMenu && <span className="toggleMenu" onClick={handleClick}>{open ? "-" : "+"} </span>}
       </div>
       {/* display the submenu links */}
       {isSubMenu && open && <SubMenu navLinks={navLinks} />}
