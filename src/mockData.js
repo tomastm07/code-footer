@@ -8,7 +8,7 @@ const desktopFooter = {
     {
       children: [
         {
-          text: "All Rights Reserved | Made in NYC | Terms & Conditions | Privacy Policy",
+          text: "© All Rights Reserved | Made in NYC | Terms & Conditions | Privacy Policy",
         },
       ],
       type: "paragraph",

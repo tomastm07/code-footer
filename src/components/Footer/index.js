@@ -9,15 +9,17 @@ const Footer = ({ desktopFooter, mobileFooter }) => {
 
   return (
     <footer className="bg-purple">
-      {/* <DesktopFooter
-        legalText={legalTextDesktop}
-        navLinkGroups={desktopFooter.navLinkGroups}
-      /> */}
-      <MobileFooter
+      <div className="container">
+        <DesktopFooter
+          legalText={legalTextDesktop}
+          navLinkGroups={desktopFooter.navLinkGroups}
+        />
+        <MobileFooter
         navLinkGroups={mobileFooter.navLinkGroups}
         legalText={legalTextMobile}
         socialLinks={mobileFooter.socialLinks}
-      />
+        />
+      </div>
     </footer>
   );
 };
