@@ -7,7 +7,7 @@ const SocialLinks = (props, idx) => {
     <div key={`sl_` + idx} className="rrss--inner flex justify-center">
       {props.socialLinks.map((item) => {
         return (
-          <a href={item.url} className="m-[20px]">
+          <a href={item.url} className="m-[10px]">
             <img src={item.icon} alt={item.name} />
           </a>
         );

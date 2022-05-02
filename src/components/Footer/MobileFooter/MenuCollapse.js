@@ -7,7 +7,7 @@ const Menu = ({ url, name, navLinks = [] }) => {
   };
   const isSubMenu = navLinks.length >= 1;
   return (
-    <li className="menu-container">
+    <li className="menu-container flex flex-col">
       <div
         className="ftLinkMobile flex justify-between"
         onClick={isSubMenu && handleClick}
@@ -20,6 +20,7 @@ const Menu = ({ url, name, navLinks = [] }) => {
       </div>
       {/* display the submenu links */}
       {isSubMenu && open && <SubMenu navLinks={navLinks} />}
+      <span className="borderBottom"></span>
     </li>
   );
 };
