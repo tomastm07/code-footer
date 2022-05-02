@@ -2,4 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fonts */
+@font-face {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/src/assets/fonts/avenir.woff') format('woff');
+}
 
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Avenir' , sans-serif;
+}
+
+.menuFooterTitle{
+    font-size: 14px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.menuFooterLinks{
+    font-family: 'Avenir', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 19.12px;
+    margin-bottom: 5px;
+}
+
+
+.footerCopyright{
+    font-family: 'Avenir', sans-serif;
+    font-weight: 100;
+}
