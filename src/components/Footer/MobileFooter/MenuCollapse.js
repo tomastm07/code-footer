@@ -12,7 +12,7 @@ const Menu = ({ url, name, navLinks = [] }) => {
   return (
     <li className="menu-container flex flex-col collapse">
       <div
-        className="ftLinkMobile flex justify-between"
+        className="ftLinkMobile flex justify-between cursor-pointer"
         onClick={isSubMenu ? toggleSubMenu : () => {}}
       >
         <h4>
@@ -20,7 +20,7 @@ const Menu = ({ url, name, navLinks = [] }) => {
         </h4>
         {/* displays the open and close icon is it's a submenu */}
         {isSubMenu && (
-          <span className="toggleMenu" onClick={toggleSubMenu}>
+          <span className="toggleMenu">
             <img src={open ? closeIcon : showIcon}></img>
           </span>
         )}
