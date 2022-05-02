@@ -5,7 +5,7 @@ const DesktopFooter = ({ navLinkGroups, legalText }) => {
   return (
     <div>
       <>
-      <div className="menuInner md:flex md:justify-between md:pt-[50px]">
+      <div className="menuInner flex w-[full] md:grid md:grid-cols-2 md:w-[50%] md:pt-[50px] md:mx-auto lg:w-[100%] lg:flex  lg:justify-between">
       {/* generates every menu item */}
       <Navigation  navLinkGroups={navLinkGroups} />
       </div>
