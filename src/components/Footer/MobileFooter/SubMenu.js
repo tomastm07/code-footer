@@ -1,6 +1,7 @@
 import React from "react";
 
 const SubMenu = ({ navLinks }) => {
+
   return (
     <ul className="submenu-container">
       {navLinks.map((link) => (

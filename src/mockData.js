@@ -164,7 +164,7 @@ const mobileFooter = {
     {
       children: [
         {
-          text: "All Rights Reserved | Made in NYC",
+          text: "© All Rights Reserved | Made in NYC",
         },
       ],
       type: "paragraph",

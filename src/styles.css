@@ -5,10 +5,22 @@
 /* Fonts */
 @font-face {
     font-family: 'Avenir';
-    font-style: normal;
+    src: url('./assets/fonts/AvenirLTStd-Roman.woff2') format('woff2'),
+        url('./assets/fonts/AvenirLTStd-Roman.woff') format('woff');
     font-weight: normal;
-    src: url('../src/assets/fonts/avenir.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'AvenirBold';
+    src: url('./assets/fonts/AvenirLTStd-Black.woff2') format('woff2'),
+        url('./assets/fonts/AvenirLTStd-Black.woff2') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 .menu-container:last-child span{
     background-color: transparent;
@@ -23,13 +35,23 @@
     display: block;
     width: 100%;
     height: .5px;
-    background-color: white;
+    background-color: #ffffffb5;
 }
 
 .ftLinkMobile{
-    font-family: 'Avenir', sans-serif;
+    font-family: 'AvenirBold', sans-serif;
     padding: 14.5px 0;
     font-weight: 900;
+    font-size: 14px;
+    text-transform: lowercase;
+    line-height: 19px;
+}
+
+.toggleMenu{
+    font-family: 'AvenirBold', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    margin-right: 10px;
 }
 
 footer{
@@ -42,6 +64,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .menuFooterTitle{
+    font-family: 'AvenirBold', sans-serif;
     font-size: 14px;
     font-weight: bolder;
     text-transform: uppercase;
@@ -60,4 +83,38 @@ h1,h2,h3,h4,h5,h6{
 .footerCopyright{
     font-family: 'Avenir', sans-serif;
     font-weight: 100;
+    font-size: 14px;
+}
+
+.submenu-container li{
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-weight: 100;
+    text-transform: lowercase;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+
+.ftLinkMobile{
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+}
+
+.open,.close{
+    position: relative;
+    overflow: hidden;
+}
+
+.collapse .close{
+    transform: translateX(-20px);
+    transition: transform .5s;
+}
+
+
+.collapse .open{
+    transform: translateX(0);
+    transition: transform .5s;
 }
