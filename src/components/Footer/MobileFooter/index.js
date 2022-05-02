@@ -15,8 +15,8 @@ const MobileFooter = ({ navLinkGroups, legalText, socialLinks }) => {
 
       {/* legaltext is null if not defined  */}
       <div className="copyrightMobile text-white text-center pt-[33px] pb-[57px]">
-        {legalText.map((text) => (
-          <p>{text}</p>
+        {legalText.map((text,idx) => (
+          <p key={`${idx}text`}>{text}</p>
         ))}
       </div>
     </div>

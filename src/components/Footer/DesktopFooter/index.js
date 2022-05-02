@@ -11,8 +11,8 @@ const DesktopFooter = ({ navLinkGroups, legalText }) => {
       </div>
       <div className="footerCopyright block mt-[70px] pb-[50px]">
       {/* legaltext is null if not defined  */}
-        {legalText.map((text) => (
-          <p className="text-white text-center">{text}</p>
+        {legalText.map((text, idx) => (
+          <p key={`${idx}text`} className="text-white text-center">{text}</p>
         ))}
       </div>
       </>
